@@ -1,16 +1,16 @@
-# Integrating dFlip PDF Viewer with Vue 3
+# Integrating DearFlip PDF Viewer with Vue 3
 
-This repository demonstrates how to integrate the dFlip PDF viewer library with a Vue 3 application.
+This repository demonstrates how to integrate the DearFlip PDF viewer library with a Vue 3 application.
 
 ## Prerequisites
 - Vue 3 project (created with Vite or Vue CLI)
-- dFlip library files (purchased from [DearFlip](https://dearflip.com/))
+- DearFlip library files (purchased from [DearFlip](https://dearflip.com/))
 
 ## Step-by-Step Integration Guide
 
 ### 1. Set up the directory structure
 
-Place the dFlip library files in the `public` folder of your Vue project:
+Place the DearFlip library files in the `public` folder of your Vue project:
 
 ```
 public/
@@ -26,7 +26,7 @@ public/
       └── sound/
 ```
 
-### 2. Add dFlip resources to index.html
+### 2. Add DearFlip resources to index.html
 
 Modify your `index.html` to include the necessary dFlip CSS and JavaScript files:
 
@@ -142,9 +142,9 @@ onMounted(() => {
 </template>
 ```
 
-### 5. Configure dFlip options
+### 5. Configure DearFlip options
 
-The dFlip viewer is highly customizable. Here are some common options you can include: For more info, visit [https://dearflip.com/docs](https://dearflip.com/docs)
+The DearFlip viewer is highly customizable. Here are some common options you can include: For more info, visit [https://dearflip.com/docs](https://dearflip.com/docs)
 
 ```javascript
 const flipbookOptions = {
@@ -183,7 +183,7 @@ const flipbookOptions = {
 
 ### 6. Additional styling (optional)
 
-You can add additional styling for the dFlip viewer container in your App.vue:
+You can add additional styling for the DearFlip viewer container in your App.vue:
 
 ```css
 <style>
@@ -206,7 +206,7 @@ You can add additional styling for the dFlip viewer container in your App.vue:
 ## Troubleshooting
 
 1. **PDF not loading:** Ensure the path to your PDF file is correct and the file exists in the public folder.
-2. **dFlip not initializing:** Check browser console for errors and ensure all required dFlip files are correctly included.
+2. **DearFlip not initializing:** Check browser console for errors and ensure all required dFlip files are correctly included.
 3. **Styling issues:** Make sure the container div has appropriate dimensions (height/width).
 
 ## Advanced Usage

@@ -1,5 +1,5 @@
 <script setup>
-import DFlipViewer from '@/components/DFlipViewer.vue';
+import DearFlipViewer from '@/components/DearFlipViewer.vue';
 import { onMounted, ref } from 'vue';
 
 const flipbookOptions = {
@@ -48,6 +48,6 @@ const openFile = () => {
 
 <template>
   <button @click="openFile">Open File</button>
-  <DFlipViewer ref="dflipRef" :options="flipbookOptions" />
+  <DearFlipViewer ref="dflipRef" :options="flipbookOptions" />
 
 </template>

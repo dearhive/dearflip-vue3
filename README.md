@@ -14,13 +14,13 @@ Place the dFlip library files in the `public` folder of your Vue project:
 
 ```
 public/
-  └── dflip/
+  └── dFlip/
       ├── css/
-      │   ├── dflip.css
-      │   └── dflip.min.css
+      │   ├── dFlip.css
+      │   └── dFlip.min.css
       ├── js/
-      │   ├── dflip.js
-      │   ├── dflip.min.js
+      │   ├── dFlip.js
+      │   ├── dFlip.min.js
       │   └── libs/
       ├── images/
       └── sound/
@@ -39,27 +39,27 @@ Modify your `index.html` to include the necessary dFlip CSS and JavaScript files
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue dFlip Integration</title>
     <!-- Include dFlip CSS -->
-    <link rel="stylesheet" href="/dflip/css/dflip.css">
+    <link rel="stylesheet" href="/dFlip/css/dFlip.css">
   </head>
   <body>
     <div id="app"></div>
     <!-- Include jQuery if required by your dFlip version -->
-    <script src="/dflip/js/libs/jquery.min.js"></script>
+    <script src="/dFlip/js/libs/jquery.min.js"></script>
     <!-- Include dFlip JS -->
-    <script src="/dflip/js/dflip.js"></script>
+    <script src="/dFlip/js/dFlip.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
 ```
 
-### 3. Create a DFlipViewer component
+### 3. Create a DearFlipViewer component
 
-Create a `DFlipViewer.vue` component in your components directory:
+Create a `DearFlipViewer.vue` component in your components directory:
 
 ```javascript
-// src/components/DFlipViewer.vue
+// src/components/DearFlipViewer.vue
 <template>
-  <div data-option="dflipOptions" class="df-element"></div>
+  <div data-option="dearFlipOptions" class="df-element"></div>
 </template>
 
 <script setup>
@@ -79,7 +79,7 @@ onMounted(() => {
   window.dFlipLocation = "/dflip/";
 
   // Initialize the flipbook with the provided options
-  window.dflipOptions = props.options;
+  window.dearFlipOptions = props.options;
 
   // Initialize the flipbook
   try {
@@ -113,13 +113,13 @@ defineExpose({
 </style>
 ```
 
-### 4. Use the DFlipViewer component in your app
+### 4. Use the DearFlipViewer component in your app
 
 In your main App.vue or wherever you want to display the PDF:
 
 ```javascript
 <script setup>
-import DFlipViewer from '@/components/DFlipViewer.vue';
+import DearFlipViewer from '@/components/DearFlipViewer.vue';
 import { onMounted, ref } from 'vue';
 
 const flipbookOptions = {
@@ -129,16 +129,16 @@ const flipbookOptions = {
   source: '/pdf/your-pdf-file.pdf', // Path to your PDF file
 };
 
-const dflip = ref(null);
+const dearFlip = ref(null);
 
 onMounted(() => {
   // Access the flipbook instance if needed
-  console.log(dflip.value.getFlipbookInstance());
+  console.log(dearFlip.value.getFlipbookInstance());
 })
 </script>
 
 <template>
-  <DFlipViewer ref="dflip" :options="flipbookOptions" />
+  <DearFlipViewer ref="dearFlip" :options="flipbookOptions" />
 </template>
 ```
 
@@ -218,7 +218,7 @@ You can access the dFlip instance to call its API methods:
 ```javascript
 onMounted(() => {
   // Get the flipbook instance
-  const flipbook = dflip.value.getFlipbookInstance();
+  const flipbook = dearFlip.value.getFlipbookInstance();
   
   // Example methods
   // flipbook.openLocalFile();   // Open local pdf file in lightbox

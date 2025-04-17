@@ -144,7 +144,7 @@ onMounted(() => {
 
 ### 5. Configure dFlip options
 
-The dFlip viewer is highly customizable. Here are some common options you can include:
+The dFlip viewer is highly customizable. Here are some common options you can include: For more info, visit [https://dearflip.com/docs](https://dearflip.com/docs)
 
 ```javascript
 const flipbookOptions = {
